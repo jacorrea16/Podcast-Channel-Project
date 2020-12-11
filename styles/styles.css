@@ -531,6 +531,15 @@ body {
   padding-bottom: 4.188em;
 }
 
+.novedades-mySVG {
+  height: 600px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
 .novedades-last {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 2.25em;
