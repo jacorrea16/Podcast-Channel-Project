@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  font-family: "IBM Plex Mono", monospace;
+  background-color: #ffffff;
+}
+
+/* header */
+
+.header {
+  background-color: #ffffff;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  
+
+  /*Logo*/
+
+  &-logo {
+    display: block;
+    float: left;
+    padding-left: 1em;
+    padding-top: 0.625em;
+    padding-bottom: 0.625em;
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  /*Menu*/
+
+  &-menu {
+    list-style: none;
+    overflow: hidden;
+    background-color: #0000ec;
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+    padding-left: 1em;
+  }
+
+  /*Item*/
+
+  &-item {
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 24px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 1em;
+  }
+
+  /*Icono barra*/
+
+  &-icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    padding-top: 1.4em;
+    padding-right: 1.188em;
+    position: relative;
+    user-select: none;
+  }
+
+  /*Icono barra-hamb*/
+
+  &-navicon {
+    background: #060a24;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: 0.2s ease-out;
+    width: 18px;
+  }
+}
+.header .header-icon .header-navicon:before,
+.header .header-icon .header-navicon:after {
+  background: #060a24;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.header .header-icon .header-navicon:before {
+  top: 5px;
+}
+
+.header .header-icon .header-navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .header-btn {
+  display: none;
+}
+
+.header .header-btn:checked ~ .header-menu {
+  max-height: 240px;
+}
+
+.header .header-btn:checked ~ .header-icon .header-navicon {
+  background: transparent;
+}
+
+.header .header-btn:checked ~ .header-icon .header-navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .header-btn:checked ~ .header-icon .header-navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .header-btn:checked ~ .header-icon:not(.steps):not(.steps) .header-navicon:before,
+.header .header-btn:checked ~ .header-icon:not(.steps):not(.steps) .header-navicon:after {
+  top: 0;
+}
+
+/* Escritorio = 1024px */
+
+@media (min-width: 1024px) {
+  .header {
+    display: inline-flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    align-items: center;
+    height: 80px;
+    
+    
+  }
+
+  .header-logo {
+    padding-left: 6.25em;
+    padding-bottom: 1.375em;
+    padding-top: 1.375em;
+    width: 2.25em;
+    height: 2.25em;
+  }
+  .header-icon {
+    display: none;
+  }
+
+  .header-item {
+    padding-right: 3em;
+    padding-left: 0;
+    background-color: #ffffff;
+    color: #060a24;
+  }
+
+  .header-items {
+    display: inline-block;
+  }
+
+  .header-menu {
+    max-height: none;
+    display: flex;
+    background-color: #FFFFFF;
+
+   } 
+    }

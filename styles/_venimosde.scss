@@ -1,0 +1,56 @@
+.venimosde {
+    color: #060a24;
+    position: relative;
+    bottom: 90px;
+
+    &-phone {
+        max-width: 100%;
+    }
+    &-title {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 2.25em;
+        font-weight: 400;
+        line-height: 1.167em;
+        width: 70%;
+        margin: 0;
+        padding-left: 0.444em;
+    }
+
+    &-parrafo {
+        padding-left: 1em;
+        padding-right: 1em;
+        font-size: 0.89em;
+        line-height: 1.375em;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .venimosde {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        max-width: 90%;
+        margin: 0 4.3% 0 11.5%;
+
+        &-phone {
+            height: 630px;
+            margin-top: -3em;
+            margin-left: 1.5em;
+        }
+        &-text {
+            margin-top: 10em;
+            margin-left: -2em;
+            line-height: 1.5em;
+        }
+
+        &-title{ 
+            font-size: 48px;
+            padding-left: 0.3em;
+        }
+
+        &-parrafo {
+            width: 68%;
+        }
+    }
+}

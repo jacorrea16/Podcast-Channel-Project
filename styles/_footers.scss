@@ -1,0 +1,37 @@
+.footers {
+    padding: 1em;
+    text-align: center;
+    color: #060a24;
+&-copyright{ 
+
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 14px;
+    line-height: 1.375em;
+    margin: 0;
+    padding-bottom: 1em;
+}
+    &-networks {
+        padding-top: 1em;
+        display: flex;
+        justify-content: space-around;
+    }
+    a:visited {
+        color: #060a24;
+    }
+}
+@media screen and (min-width: 1024px){ 
+
+    .footers{ 
+        display: flex;
+        justify-content: space-between;
+        padding: 2.25em 0;
+        padding-left: 8%;
+        padding-right: 8%;
+
+        &-networks{ 
+            width: 20%;
+            padding: 0;
+        }
+}
+
+    }

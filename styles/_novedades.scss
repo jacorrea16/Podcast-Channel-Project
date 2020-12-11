@@ -1,0 +1,65 @@
+.novedades {
+    background: linear-gradient(225deg, #0000ff 0%, #0000a3 100%);
+    position: relative;
+    color: white;
+    padding-bottom: 4.188em;
+
+    &-last {
+        font-family: "IBM Plex Sans", sans-serif;
+        font-size: 2.25em;
+        font-weight: 400;
+        line-height: 1.167em;
+        text-align: center;
+        padding-top: 1.778em;
+        padding-bottom: 1.028em;
+        margin: 0;
+        width: 70%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &-botonescucha {
+        display: flex;
+        justify-content: center;
+        font-weight: 500;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        background-color: #00f3bb;
+        text-align: center;
+        text-decoration: none;
+        margin: 0 1em 0;
+        color: #060a24;
+
+        &:hover {
+            background-color: gray;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .novedades {
+        padding-top: 6em;
+        padding-bottom: 151px;
+
+        &-last {
+            font-size: 48px;
+            padding-bottom: 0;
+            padding-left: 1em;
+        }
+
+        &-botonescucha {
+            font-size: 1.125em;
+            width: 24%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-top: 2em;
+            padding-right: 1em;
+
+            &:hover {
+                background-image: linear-gradient(225deg, #0000fe 0%, #00f3bb 100%);
+                color: #ffffff;
+                cursor: pointer;
+            }
+        }
+    }
+}
