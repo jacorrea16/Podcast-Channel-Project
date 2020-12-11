@@ -532,7 +532,7 @@ body {
 }
 
 .novedades-mySVG {
-  height: 600px;
+  height: 500px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -639,10 +639,9 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 2.25em 0;
     padding-left: 8%;
     padding-right: 8%;
-    height: 10px;
+    height: 12px;
   }
   .footers-networks {
     width: 20%;
