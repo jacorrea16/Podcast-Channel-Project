@@ -532,7 +532,6 @@ body {
 }
 
 .novedades-mySVG {
-  height: 500px;
   width: 100%;
   position: absolute;
   left: 0;
@@ -581,6 +580,9 @@ body {
   .novedades {
     padding-top: 6em;
     padding-bottom: 151px;
+  }
+  .novedades-mySVG {
+    height: 500px;
   }
   .novedades-last {
     font-size: 48px;
