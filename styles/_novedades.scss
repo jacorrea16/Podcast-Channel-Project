@@ -5,7 +5,7 @@
     padding-bottom: 4.188em;
 
     &-mySVG {
-        height: 500px;
+
         width: 100%;
         position: absolute;
         left: 0;
@@ -48,6 +48,9 @@
     .novedades {
         padding-top: 6em;
         padding-bottom: 151px;
+
+         &-mySVG {
+        height: 500px; }
 
         &-last {
             font-size: 48px;
