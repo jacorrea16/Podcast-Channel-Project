@@ -30,13 +30,11 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        max-width: 90%;
-        margin: 0 4.3% 0 11.5%;
+       
 
         &-phone {
             height: 630px;
-            margin-top: -3em;
-            margin-left: 1.5em;
+            
         }
         &-text {
             margin-top: 10em;
@@ -47,8 +45,26 @@
         &-title{ 
             font-size: 48px;
             padding-left: 0.3em;
+        
         }
 
+        &-parrafo {
+            width: 90%;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .venimosde {
+        
+        max-width: 90%;
+        margin: 0 4.3% 0 11.5%;
+
+        &-phone {
+            height: 630px;
+            margin-top: -3em;
+            margin-left: 1.5em;
+        }
+       
         &-parrafo {
             width: 68%;
         }

@@ -5,7 +5,6 @@
     padding-bottom: 4.188em;
 
     &-mySVG {
-
         width: 100%;
         position: absolute;
         left: 0;
@@ -44,23 +43,23 @@
         }
     }
 }
+
 @media screen and (min-width: 768px) {
     .novedades {
         padding-top: 6em;
-        padding-bottom: 151px;
 
-         &-mySVG {
-        height: 500px; }
+        &-mySVG {
+            height: 400px;
+        }
 
         &-last {
-            font-size: 48px;
             padding-bottom: 0;
             padding-left: 1em;
         }
 
         &-botonescucha {
             font-size: 1.125em;
-            width: 24%;
+            width: 40%;
             position: relative;
             left: 50%;
             transform: translateX(-50%);
@@ -74,4 +73,21 @@
             }
         }
     }
-} 
+}
+@media screen and (min-width: 1024px) {
+    .novedades {
+        padding-bottom: 151px;
+
+        &-mySVG {
+            height: 500px;
+        }
+
+        &-last {
+            font-size: 48px;
+        }
+
+        &-botonescucha {
+            width: 24%;
+        }
+    }
+}
