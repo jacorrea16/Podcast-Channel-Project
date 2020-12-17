@@ -120,8 +120,8 @@ body {
   top: 0;
 }
 
-/* Escritorio = 1024px */
-@media (min-width: 1024px) {
+/* Tablet = 768px */
+@media (min-width: 768px) {
   .header {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -139,10 +139,8 @@ body {
     height: 80px;
   }
   .header-logo {
-    padding-left: 6.25em;
-    padding-bottom: 1.375em;
-    padding-top: 1.375em;
-    width: 2.25em;
+    padding-bottom: 1em;
+    width: 2em;
     height: 2.25em;
   }
   .header-icon {
@@ -162,7 +160,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
+  }
+}
+
+/* Escritorio = 1024px */
+@media (min-width: 1024px) {
+  .header-logo {
+    padding-left: 6.25em;
+    padding-bottom: 1.375em;
+    padding-top: 1.375em;
+    width: 2.25em;
+    height: 2.25em;
   }
 }
 
