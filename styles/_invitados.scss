@@ -19,7 +19,7 @@
         border: none;
     }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
     .guests-imgcontainer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

@@ -364,7 +364,7 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .episodios {
     padding: 8% 8% 15%;
   }
@@ -417,7 +417,7 @@ body {
   margin-bottom: 0;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .venimosde {
     display: -ms-grid;
     display: grid;
@@ -467,7 +467,7 @@ body {
   border: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .guests-imgcontainer {
     display: -ms-grid;
     display: grid;
@@ -603,7 +603,7 @@ body {
   background-color: gray;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .novedades {
     padding-top: 6em;
     padding-bottom: 151px;
@@ -660,7 +660,7 @@ body {
   color: #060a24;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .footers {
     display: -webkit-box;
     display: -ms-flexbox;
